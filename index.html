@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vista Peptides | Research-Grade Peptides</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f8f9fa; color: #333; }
+        header { background: linear-gradient(135deg, #0066cc, #00cc99); color: white; padding: 1rem; text-align: center; }
+        nav { background: #fff; padding: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        nav a { margin: 0 15px; text-decoration: none; color: #0066cc; font-weight: bold; }
+        .hero { background: #e6f3ff; padding: 4rem 2rem; text-align: center; }
+        .section { padding: 3rem 2rem; max-width: 1200px; margin: auto; }
+        .products { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 2rem; }
+        .product-card { background: white; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); overflow: hidden; }
+        .product-card img { width: 100%; height: 200px; object-fit: cover; }
+        .product-card h3 { margin: 1rem; }
+        .pricing { padding: 1rem; background: #f0f8ff; }
+        button { background: #00cc99; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; }
+        footer { background: #333; color: white; text-align: center; padding: 2rem; }
+        .disclaimer { background: #fff3cd; padding: 1rem; margin: 1rem; border: 1px solid #ffeaa7; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Vista Peptides</h1>
+        <p>Research-Grade Peptides for Scientific Discovery</p>
+    </header>
+    
+    <nav>
+        <a href="#shop">Shop</a>
+        <a href="#benefits">Benefits & Science</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#" onclick="alert('Cart: Coming soon!')">🛒 Cart</a>
+    </nav>
+    
+    <div class="hero">
+        <h2>High-Purity Research Materials</h2>
+        <p>Independent testing • Flexible volumes • Ships fast</p>
+        <p><strong>5+ bottles: 20% off | 10+: 30% off | Free shipping $300+</strong></p>
+    </div>
+    
+    <div class="disclaimer">
+        <strong>IMPORTANT LEGAL NOTICE:</strong> All products are sold strictly for laboratory research use only. Not for human or animal consumption, therapeutic use, or any other purpose. Vista Peptides makes no claims about efficacy or safety for human use. Buyers must be 18+ and agree to our Terms. Consult regulations in your jurisdiction.
+    </div>
+    
+    <div id="shop" class="section">
+        <h2>Browse Catalog</h2>
+        <p>Categorized by primary research focus. Select dosage/quantity. COAs available.</p>
+        
+        <!-- Categories -->
+        <h3>Categories</h3>
+        <ul>
+            <li><strong>Healing & Recovery:</strong> BPC-157, TB-500, etc.</li>
+            <li><strong>Metabolic & Energy:</strong> AOD9604, MOTS-c, etc.</li>
+            <li><strong>Growth & Endocrine:</strong> CJC-1295, Ipamorelin, etc.</li>
+            <li><strong>Anti-Aging & Longevity:</strong> Epithalon, GHK-Cu, etc.</li>
+            <li><strong>Blends & Others:</strong> GLOW, KLOW, etc.</li>
+        </ul>
+        
+        <div class="products">
+            <!-- Example Product 1 -->
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300x200/0066cc/fff?text=BPC-157" alt="BPC-157">
+                <h3>BPC-157</h3>
+                <p>Research material for tissue response and healing pathway studies. 10mg vials.</p>
+                <div class="pricing">
+                    <p>From $50</p>
+                    <p>1 vial: $50 | 5: $200 (20% off) | 10: $350 (30% off)</p>
+                    <button onclick="addToCart('BPC-157')">Add to Cart</button>
+                </div>
+                <a href="#">View COA</a>
+            </div>
+            
+            <!-- Add more cards similarly for AOD9604, CJC-1295, GHK-Cu, etc. Copy-paste and customize. -->
+            <!-- Example: -->
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300x200/00cc99/fff?text=GHK-Cu" alt="GHK-Cu">
+                <h3>GHK-Cu</h3>
+                <p>Copper peptide for cellular maintenance and aging pathway research. 50mg / 100mg.</p>
+                <div class="pricing">
+                    <p>From $40</p>
+                    <button onclick="addToCart('GHK-Cu')">Add to Cart</button>
+                </div>
+            </div>
+            <!-- Expand with 10-20 products modeled on the example site -->
+        </div>
+    </div>
+    
+    <div id="benefits" class="section" style="background: #e6f3ff;">
+        <h2>Peptides in Research: Potential Benefits</h2>
+        <p>Peptides are short chains of amino acids that serve as signaling molecules in biological systems. Research explores their roles in various pathways.<grok-card data-id="933923" data-type="citation_card" data-plain-type="render_inline_citation" ></grok-card><grok-card data-id="6d8f19" data-type="citation_card" data-plain-type="render_inline_citation" ></grok-card></p>
+        
+        <ul>
+            <li><strong>Tissue Repair & Recovery:</strong> Studies on compounds like BPC-157 and TB-500 for wound healing models.</li>
+            <li><strong>Metabolic Health:</strong> Research into fat metabolism, energy (e.g., MOTS-c, AOD9604).</li>
+            <li><strong>Anti-Aging & Cellular Health:</strong> Telomere, collagen, and longevity pathway investigations (Epithalon, GHK-Cu).</li>
+            <li><strong>Endocrine & Growth:</strong> GH secretagogues like CJC-1295/Ipamorelin in hormone signaling studies.</li>
+        </ul>
+        
+        <h3>Scientifically Backed Sources</h3>
+        <ul>
+            <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8844085/" target="_blank">Therapeutic Peptides Review (PMC)</a><grok-card data-id="5f1bf0" data-type="citation_card" data-plain-type="render_inline_citation" ></grok-card></li>
+            <li><a href="https://www.webmd.com/a-to-z-guides/what-are-peptides" target="_blank">Peptides Overview</a></li>
+            <li>PubMed searches for specific peptides (e.g., "BPC-157 review"). Always verify primary literature.</li>
+        </ul>
+        <p><em>These are for informational purposes on research literature only. No product-specific claims.</em></p>
+    </div>
+    
+    <div id="about" class="section">
+        <h2>About Vista Peptides</h2>
+        <p>We provide high-quality, third-party tested research materials. Every batch verified for purity and potency. Committed to transparency and scientific integrity.</p>
+        <p><strong>Shipping:</strong> Within 48 hours • Secure packaging • International options available (check local laws).</p>
+    </div>
+    
+    <footer>
+        <p>&copy; Vista Peptides. All products for laboratory research only.</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> | <a href="#">Shipping & Returns</a></p>
+        <p>Contact: support@vistapeptides.example | Okinawa, Japan (or your location)</p>
+    </footer>
+    
+    <script>
+        function addToCart(item) {
+            alert(item + " added to cart! (Demo - implement real cart)");
+        }
+    </script>
+</body>
+</html>
